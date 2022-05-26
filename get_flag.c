@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * get_flag - turns on flags if _printf finds
- * a flag modifier in the format string
+ * get_flag -  checks and turns on flags if _printf finds
+ * a flag modifier in the format string e.g %+5d
  * @s: character that holds the flag specifier
  * @f: pointer to the struct flags in which we turn the flags on
  *
