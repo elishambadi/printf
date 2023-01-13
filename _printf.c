@@ -1,4 +1,6 @@
 #include "main.h"
+#include <limits.h>
+#include <stdio.h>
 
 /**
  * _printf - produces output according to a format
@@ -38,11 +40,11 @@ int _printf(const char *format, ...)
 			count += (pfunc)
 				? pfunc(arguments, &flags)
 				: _printf("%%%c", *p);
-		}
-		else
+		} else
 			count += _putchar(*p);
 	}
 	_putchar(-1);
 	va_end(arguments);
 	return (count);
+
 }

@@ -1,11 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- *This is the main file, which unites all the project files we
- *have, and it brings all the functions together.
- */
-
 #include <stdlib.h>
 #include <stdarg.h>
 
@@ -18,9 +13,9 @@
  */
 typedef struct flags
 {
-    int plus;
-    int space;
-    int hash;
+	int plus;
+	int space;
+	int hash;
 } flags_t;
 
 /**
@@ -31,8 +26,8 @@ typedef struct flags
  */
 typedef struct printHandler
 {
-    char c;
-    int (*f)(va_list ap, flags_t *f);
+	char c;
+	int (*f)(va_list ap, flags_t *f);
 } ph;
 
 /* print_nums */

@@ -21,6 +21,5 @@ int print_address(va_list l, flags_t *f)
 	str = convert(p, 16, 1);
 	count += _puts("0x");
 	count += _puts(str);
-
 	return (count);
 }
